@@ -9,7 +9,6 @@ import {
   formatPercent,
 } from "../utils/formatters";
 
-import ZoneChart from "./ZoneChart";
 
 interface Props {
   rows: ZoneAnalyticsRow[];
@@ -18,7 +17,6 @@ interface Props {
 
 export default function ZoneAnalytics({
   rows,
-  chartData,
 }: Props) {
   return (
     <>
@@ -158,7 +156,7 @@ export default function ZoneAnalytics({
         </div>
       </section>
 
-      <ZoneChart data={chartData} />
+
     </>
   );
 }
